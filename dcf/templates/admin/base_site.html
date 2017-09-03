@@ -1,0 +1,6 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+{% block userlinks %}
+    <a href="{% url 'dcfadmin:dcf_tasks' %}">Celery</a> / 
+    {{block.super}}
+{% endblock %}
